@@ -281,7 +281,7 @@ export default function LandingPage({ lang='ar', setPage, setSchool }) {
   const [activeTab, setActiveTab] = useState(0)
   const [scrollY, setScrollY] = useState(0)
   const [tickerIdx, setTickerIdx] = useState(0)
-  const [heroAngle, setHeroAngle] = useState(0)
+  const [, setHeroAngle] = useState(0)
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY)
