@@ -32,6 +32,7 @@ export default function SchoolDashboard({ profile, userId, onLogout }) {
   // Fee form
   const [fees, setFees] = useState([{ stage_ar: '', stage_en: '', min_fee: '', max_fee: '' }])
 
+  // eslint-disable-next-line
   useEffect(() => { loadData() }, [])
 
   const loadData = async () => {

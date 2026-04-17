@@ -297,7 +297,7 @@ const ReviewModal = ({ school, lang, userId, onClose }) => {
 
 /* ══ PROFILE PAGE ══ */
 const ProfilePage = ({ user, profile, lang, setPage, onLogout }) => {
-  const t=T[lang], isRTL=lang==='ar'
+  const t=T[lang]
   const [reviews,setReviews]=useState([])
   useEffect(()=>{ if(user) supabase.from('reviews').select('*').eq('user_id',user.id).then(({data})=>{ if(data) setReviews(data) }) },[user])
   return (
